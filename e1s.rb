@@ -5,11 +5,11 @@
 class E1s < Formula
   desc "e1s is a terminal application to simply browsing and manage AWS ECS resources, with a focus on Fargate. Inspired by k9s."
   homepage "https://github.com/keidarcy/e1s"
-  version "1.0.49"
+  version "1.0.50"
 
   on_macos do
-    url "https://github.com/keidarcy/e1s/releases/download/v1.0.49/e1s_1.0.49_darwin_all.tar.gz"
-    sha256 "aa5fc952720d9a5029fec107092cf0afb33269cda3e24a8cc4c05ad156484dce"
+    url "https://github.com/keidarcy/e1s/releases/download/v1.0.50/e1s_1.0.50_darwin_all.tar.gz"
+    sha256 "e8fc6841b816ccb72bb172c2eb31901879bb926dbeb690abbded7caf1421ede4"
 
     def install
       bin.install "e1s"
@@ -19,8 +19,8 @@ class E1s < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/keidarcy/e1s/releases/download/v1.0.49/e1s_1.0.49_linux_amd64.tar.gz"
-        sha256 "4045944a1543bb920db45784bc36f553a9f3f5cdba0955d125fbdfd60d5fba00"
+        url "https://github.com/keidarcy/e1s/releases/download/v1.0.50/e1s_1.0.50_linux_amd64.tar.gz"
+        sha256 "aab96b7e17f2ea7731e134b2bac2af0bb7da7732ead74302e421fbd9af793662"
 
         def install
           bin.install "e1s"
@@ -29,8 +29,8 @@ class E1s < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/keidarcy/e1s/releases/download/v1.0.49/e1s_1.0.49_linux_arm64.tar.gz"
-        sha256 "ee5d31cbe1c3b729837fd889bb2e47a478e4ad3432ca824c4dbd1672f2b25e1f"
+        url "https://github.com/keidarcy/e1s/releases/download/v1.0.50/e1s_1.0.50_linux_arm64.tar.gz"
+        sha256 "2ae2bbda9f443148209031903950773c2d145f3317f95cfddeffb9debf5b7618"
 
         def install
           bin.install "e1s"
