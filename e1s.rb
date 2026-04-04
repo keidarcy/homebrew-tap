@@ -5,11 +5,11 @@
 class E1s < Formula
   desc "e1s is a terminal application to simply browsing and manage AWS ECS resources, with a focus on Fargate. Inspired by k9s."
   homepage "https://github.com/keidarcy/e1s"
-  version "2.0.0-rc.1"
+  version "2.0.0-rc.2"
 
   on_macos do
-    url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.1/e1s_2.0.0-rc.1_darwin_all.tar.gz"
-    sha256 "0831776e72119ea6e8fa0c9dc5b0189d13c0b126ca6df9621ba45458bf585810"
+    url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.2/e1s_2.0.0-rc.2_darwin_all.tar.gz"
+    sha256 "e70f5c15cb3646b2ed8f9e13ac25aba8882642ec0d229f605d3a5638e6927566"
 
     define_method(:install) do
       bin.install "e1s"
@@ -18,15 +18,15 @@ class E1s < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.1/e1s_2.0.0-rc.1_linux_amd64.tar.gz"
-      sha256 "620d800c91a898ac046bbb096c58156f98b79ca3699fa4d22b2407ed857cde87"
+      url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.2/e1s_2.0.0-rc.2_linux_amd64.tar.gz"
+      sha256 "349077f65cc59006f8ece5f62ebe6b09717e35473b299df1015970ecea76657e"
       define_method(:install) do
         bin.install "e1s"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.1/e1s_2.0.0-rc.1_linux_arm64.tar.gz"
-      sha256 "71558d02902c0373a6f6370d0326b40b0b9cf0b0c55ad56e036dea4c332d2572"
+      url "https://github.com/keidarcy/e1s/releases/download/v2.0.0-rc.2/e1s_2.0.0-rc.2_linux_arm64.tar.gz"
+      sha256 "291a5446fa3fe120b1c4df49dfa455a2410bf89d79cd4d73dc9422896d03dace"
       define_method(:install) do
         bin.install "e1s"
       end
